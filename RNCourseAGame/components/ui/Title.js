@@ -18,5 +18,7 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#b38a05',
         padding: 12,
+        maxWidth: '80%',
+        width: 300
     }
 })
