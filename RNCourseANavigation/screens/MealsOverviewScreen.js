@@ -19,13 +19,22 @@ function MealsOverviewScreen({ route, navigation }) {
     }, [catId, navigation]);
 
     function renderMealItem(itemData) {
+
         const item = itemData.item;
+
+        // function pressHandler() {
+        //     navigation.navigate('MealDetail', {
+        //         mealId: item.id,})
+        // }
+
         const mealItemProps = {
+            id: item.id,
             title: item.title,
             ImageUrl: item.imageUrl,
             affordability: item.affordability,
             complexity: item.complexity,
             duration: item.duration,
+            // onPress: pressHandler
         }
         // return <MealItem title={itemData.item.title} ImageUrl={itemData.item.imageUrl} />;
         return <MealItem {...mealItemProps} />
