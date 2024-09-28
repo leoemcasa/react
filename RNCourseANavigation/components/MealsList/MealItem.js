@@ -1,6 +1,6 @@
 import { View, Pressable, Text, Image, StyleSheet, Platform } from "react-native"
 import { useNavigation } from "@react-navigation/native"
-import MealDetails3 from "./MealDetails3"
+import MealDetails3 from "../MealDetails3"
 
 function MealItem({ id, title, ImageUrl, duration, complexity, affordability, onPress }) {
 
